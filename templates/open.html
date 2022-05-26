@@ -5,9 +5,10 @@
     <title>open</title>
   </head>
   <body>
+    <h1 style="text-align:center">Files from ./open folder</h1>
     <ul>
     {% for file in files %}
-        <li><a href="{{ url_for('send', filename=file) }}">{{ file }}</a></li>
+        <li><a href="{{ url_for('expose_file_from_directory', filename=file) }}">{{ file }}</a></li>
     {% endfor %}
     </ul>
   </body>
